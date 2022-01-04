@@ -1,0 +1,189 @@
+.summary{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #000046;
+    margin: 20px 0;
+     .logo{
+        max-width: 164px;
+        max-height: 164px;
+        width: 164px;
+        height: 164px;
+        border-radius: 50%;
+        border: 1px solid #000046;
+        margin-right: 20px;
+     }
+    .deckr{
+        flex-grow: 1;
+        .vacancy{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 15px;
+        }
+        .contact{
+            display: flex;
+            
+            margin-bottom: 15px;
+            align-items: center;
+            .name{
+                font-size: 16px;
+                line-height: 20px;
+                margin-right: 20px;
+            }
+            .city{
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: 400;
+                display: flex;
+            }
+        }
+        .experience{
+            color: #555556;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 18px;
+        }
+        .bottom{
+            display: flex;
+            font-weight: 400;
+            .update{
+                font-size: 12px;
+                line-height: 15px;
+                color: #ADADAD;
+                margin-right: 20px;
+            }
+            .online{
+                font-size: 12px;
+                line-height: 15px;
+                color: #4CAF50;
+               
+            }
+        }
+    }
+    
+    .info{
+        display: flex;
+         align-items: center;  
+         margin: 0 20px;
+         
+         div{
+            position: relative; 
+            &:hover .list{
+                visibility: visible;
+                opacity: 1;
+            }
+         }
+         .list{
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: -20px;
+            right: 5px;
+            width: 174px;
+            height: 94px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            border: 0.5px solid #EAEAEA;
+            box-sizing: border-box;
+            padding: 0;
+            transition: all .5s ease;
+             .list_item{
+                 list-style: none;
+                 font-size: 14px;
+                 line-height: 17px;
+                 font-weight: 400;
+                 color: #1E1E1E;
+                 
+             }
+         }
+
+    }
+}
+@media(max-width: 767px){
+    .summary{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px;
+         .logo{
+            width: 70px;
+            height: 70px;
+         }
+        .deckr{
+            
+            .vacancy{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                position: absolute;
+                top: 16px;
+                left: 50%;
+                transform: translateX(-50%);
+        
+            }
+            .contact{
+                flex-direction: column;
+                .name{
+                    position: absolute;
+                    top: 40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                .city{
+                    position: absolute;
+                    top: 70px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+            .experience{
+                text-align: center;
+              
+            }
+            .bottom{
+               flex-direction: column-reverse;
+               
+                .update{
+               
+                }
+                .online{
+                  padding-bottom: 10px;
+                   
+                }
+            }
+        }
+        
+        .info{
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+             
+             div{
+               
+                &:hover .list{
+                    
+                }
+             }
+             .list{
+              
+                 .list_item{
+                  
+                     
+                 }
+             }
+    
+        }
+    }
+}

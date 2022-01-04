@@ -1,0 +1,14 @@
+.pagination__item, .pagination__item_active{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ADADAD;
+    padding: 3px 8px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+.pagination__item_active{
+    background-color: #000046;
+   
+}

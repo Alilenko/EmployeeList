@@ -1,0 +1,11 @@
+.slider_body{
+    position: relative;
+    padding: 10px;
+}
+.MuiSlider-thumb {
+    width: 40px;
+}
+.slider_body.MuiSlider-thumb {
+    color: rgb(42, 165, 63);
+    width: 70px;
+}

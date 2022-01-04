@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import  summary  from './summarySlice'
+import filter from './filterSlice'
 
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer: {summary, filter},
+  devTools: process.env.NODE_ENV !== 'production'
 });

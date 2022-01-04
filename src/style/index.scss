@@ -1,0 +1,74 @@
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import './iconsfont.css';
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.job_seekers{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.icon-arrow{
+    color: #851FFF;
+}
+.icon-checked{
+    opacity: 0;
+    position: absolute;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    z-index: 3;
+    height: 20px;
+    width: 20px;
+    background-color: #FFE177;
+    transition: all .3s ease;
+}
+.active .icon-checked {
+    opacity: 1;
+}
+
+.filterList{
+    flex: 1 0 30%;
+    
+}
+.arrow_left{
+    transform: rotate(90deg);
+    color: #ADADAD;
+}
+.arrow_right{
+    transform: rotate(-90deg);
+    color: #ADADAD;
+}
+
+@media(max-width: 920px){
+    .filterList{
+        flex: 1 0 0%;
+    }
+    .filterList .FilterList_filterUL__MboOY {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        flex: 1 0 100%;
+        background-color: #fff;
+        padding: 10px;
+        transition: 0.5s;
+        z-index: 4;
+    }
+    .filterList_active .FilterList_filterUL__MboOY {
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        padding: 10px;
+        z-index: 4;
+    }
+}
+
+
+

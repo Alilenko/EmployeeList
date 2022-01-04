@@ -1,0 +1,96 @@
+.footer{
+    background-color: #000046;
+    .top{
+        .body{
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            .list{
+                display: flex;
+                flex-direction: column;
+
+                .name{
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin: 10px ;
+                }
+                .link {
+                    font-size: 14px;
+                    line-height: 17px;
+                    font-weight: 400;
+                    color: #fff;
+                    margin: 10px ;
+                }
+                .link div{
+                    
+                }
+            }
+        }
+        .social{
+            font-size: 24px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #fff;
+        padding: 30px;
+        position: relative;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            max-width: 100%;
+            height: 1px;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.562);
+        }
+
+        .link{
+            
+            &:after{
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            background: #FFFFFF;
+            margin: 0 12px;
+        }
+        &:last-child::after{
+            display: none;
+        }
+        }
+    }
+}
+@media(max-width:767px){
+    .footer{
+        background-color: #000046;
+        .top{
+            .body{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        .bottom{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .link{
+            
+                &:after{
+                    display: none;
+                }}
+        }
+    }
+}

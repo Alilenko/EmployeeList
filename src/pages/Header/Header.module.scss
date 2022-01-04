@@ -1,0 +1,93 @@
+.header{
+
+    background: #000046;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 10px;
+        height: 50px;
+        .header_left{
+            display: flex;
+            }
+        .header_link{
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #EAEAEA;
+           
+            text-decoration: none;
+            transition: all .5s ease;
+            &:after{
+                content: '';
+                display: inline-block;
+                width: 1px;
+                height: 12px;
+                background: #FFFFFF;
+                margin: 0 12px;
+            }
+            &:last-child::after{
+                display: none;
+            }
+            }
+            .header_right{
+                display: flex;
+                font-size: 14px;
+                
+            }
+            .header_leng{
+                font-weight: 300;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                color: #EAEAEA;
+                span{
+                    margin: 0 10px;
+                }
+            }
+            .header_signin{
+                font-weight: 500;
+                line-height: 24px;
+                color: #fff;
+                text-decoration: none;
+                margin: 0 25px;
+            }
+            .mobile{
+                display: none;
+            }}
+        }
+@media(max-width:767px){
+    .header{
+    .wrapper{
+        height: 26px;
+    
+    .header_left{
+        display: none;
+
+    }
+    .header_right{
+        
+        .header_leng{
+            display: flex;
+        }
+        .header_signin{
+            display: none;
+        }
+    }
+    .mobile{
+        display: flex;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+        color: #fff;
+        text-decoration: none;
+        justify-content: center;
+        width: 140px;
+        img{
+            align-items: center;
+            margin-left: 5px;
+        }
+    }
+    }
+}
+}

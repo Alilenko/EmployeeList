@@ -1,0 +1,58 @@
+.checkbox{
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    justify-content: space-between;
+    margin: 5px 0;
+    .num{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        color: #555556;
+        display: flex;
+        div{
+            color: #555556;
+        }
+    }
+    .img{
+        position: absolute;
+        top: 0;
+        left: 30px;
+    }
+}
+.input{
+    display: none;
+}
+
+.label{
+    color: #555556;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-flex;
+    width: 200px;
+    z-index: 3;
+
+    &::before{
+        content: '';
+        border: 1px solid #FFE177;
+        flex: 0 0 19px;
+        margin-right: 40px;
+        height: 19px;
+        background-color: #fff
+        ;
+    }
+
+} 
+.subtab{
+    opacity: 0;
+    top: -100%;
+    visibility: hidden;
+    transition: 0.5s;
+} 
+.subtab_open{
+    opacity: 1;
+    top: 0;
+    visibility: visible;
+    transition: 0.5s;
+}

@@ -1,0 +1,93 @@
+.main{
+    background: #000046;
+    .subtitle{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #EAEAEA;
+        margin: 0;
+        padding-top: 54px;
+    }
+    .title{
+        max-width: 749px;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 120px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 54px;
+    }
+    .search{
+        padding: 60px 0;
+        display: flex;
+        max-width: 814px;
+        margin: 0 auto;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        .position{
+            display: flex;
+            flex: 1 0 50%;
+          input {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 13px 46px 13px 0px;
+            border: none;
+            color: #fff;
+            flex-grow: 1;
+           
+            }
+           img{
+            background: rgba(255, 255, 255, 0.15);
+            padding:  20px 15px;
+            box-shadow: none;
+           }
+           
+        }
+        .citi{
+            box-sizing: border-box;
+            display: flex;
+            img{
+                background: rgba(255, 255, 255, 0.15);
+                padding:  20px 15px;
+                box-shadow: none;
+               }
+            input{
+                color: #fff;
+            }   
+        }
+        .btn{
+            flex-shrink: 0;
+            background: #fff;
+            padding: 14px 15px;
+            color: #020202;
+            font-size: 16px;
+            font-weight: 400;
+            box-sizing: border-box;
+        }
+    }
+}
+@media(max-width:920px){
+    .search{
+        flex-direction: column;
+        margin: 0 auto;
+        .position{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .citi{
+            width: 90%;
+            margin: 0 auto;
+            input{
+                max-width: 100%;
+                flex-grow: 1;
+            }
+        }
+        .btn{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}

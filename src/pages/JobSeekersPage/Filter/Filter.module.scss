@@ -1,0 +1,26 @@
+.filter{
+    background: #FDFDFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100px;
+    align-items: center;
+    margin: 15px 0;
+    padding: 20px 0;
+    .title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        color: #000046;
+        &::after{
+            content: '';
+            height: 1px;
+            background-color: #EAEAEA;
+            width: 323px;
+            display: block;
+            margin: 15px 0 ;
+        }
+    }
+}

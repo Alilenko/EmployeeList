@@ -1,0 +1,20 @@
+.tab{
+   padding:  10px 20px;
+
+   font-size: 14px;
+   line-height: 17px;
+   color: #000046;
+   transition: .5s;
+   border: 1px solid #000046;
+   background-color: transparent;
+ 
+
+}
+.tab_active{
+    padding:  10px 20px;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #000046;
+    color: #fff;
+    transition: .5s;
+}

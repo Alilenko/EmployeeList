@@ -1,0 +1,38 @@
+.filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .line{
+        display: flex;
+        justify-content: space-between;
+        .item{
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            padding: 10px;
+            color: #555556;
+            
+        }
+    }
+    .box{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 15px;
+        input{
+            max-width: 60px;
+            border: 1px solid #333;
+        }
+        .item{
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            padding: 10px;
+            color: #555556;
+            
+        }
+    }
+
+}

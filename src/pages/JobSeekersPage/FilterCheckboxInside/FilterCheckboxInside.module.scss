@@ -1,0 +1,36 @@
+.checkbox{
+    display: flex;
+    width: 100%;
+    max-width: 280px;
+    justify-content: space-between;
+    margin: 5px 0;
+    align-items: center;
+    .num{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        color: #555556;
+    }
+}
+.input{
+    display: none;
+}
+.label{
+    color: #555556;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-flex;
+    min-width: 200px;
+    z-index: 3;
+
+    &::before{
+        content: '';
+        border: 1px solid #FFE177;
+        flex: 0 0 19px;
+        margin-right: 11px;
+        height: 19px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+}   
