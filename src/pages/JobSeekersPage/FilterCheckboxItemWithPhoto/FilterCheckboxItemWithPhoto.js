@@ -24,7 +24,7 @@ const FilterCheckboxItem = (item) => {
         <div>
             <div className={chek ? 'active' : null} onClick={changeCheckbox}><div className= 'icon-checked'/></div>
             <input className={s.input} type="checkbox" id="scales" name="scales"  />
-               <img className={s.img} src={item.item.photo}/> 
+               <img className={s.img} src={item.item.photo} alt='leng'/> 
             <label className={s.label} htmlFor="scales" >{item.item.experience}</label >
         </div>
         <div className={s.num}>{item.item.qtty}

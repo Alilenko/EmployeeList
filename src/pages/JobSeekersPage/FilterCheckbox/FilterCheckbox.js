@@ -1,7 +1,5 @@
 import React from 'react'
-import s from './FilterCheckbox.module.scss';
 import Filter from '../Filter/Filter';
-import { useState} from 'react'
 import FilterCheckboxItem from '../FilterCheckboxItem/FilterCheckboxItem';
 import FilterCheckboxItemWithPhoto from '../FilterCheckboxItemWithPhoto/FilterCheckboxItemWithPhoto'
 import FilterSwitch from '../FilterSwitch/FilterSwitch';

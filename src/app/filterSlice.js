@@ -148,10 +148,7 @@ const filterSlice = createSlice({
     name: 'filter',
     initialState,
     reducers: {
-        changeActiveTab: (state, actions) =>{
-           const item =  state.filter.filter(item => item.tab.length > 0)
-           const itemChange = item.filter(el => el.name == actions.payload)
-        }
+
     }
 })
 
@@ -159,5 +156,5 @@ const {actions, reducer} = filterSlice;
 
 export default reducer;
 export const {
-   changeActiveTab
+   
 } = actions;

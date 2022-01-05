@@ -24,7 +24,7 @@ const Header = () => {
                 <Link className={s.header_signin} to='#'>Войти</Link>
             </div>
             <Link className={s.mobile} to='#'>Соискателю
-                    <img src={mobile}/>                
+                    <img src={mobile} alt='mobile_arrow'/>                
                  </Link>
             </div>
             </div>
