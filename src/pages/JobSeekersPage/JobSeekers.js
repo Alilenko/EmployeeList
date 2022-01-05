@@ -9,7 +9,6 @@ const JobSeekers = () => {
         <div >
             <SearchPanel/>
             <div className='job_seekers container'>
-                
                 <SummaryList/>
                 <FilterList/>
             </div>
