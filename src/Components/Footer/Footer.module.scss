@@ -24,6 +24,7 @@
                     font-weight: 400;
                     color: #fff;
                     margin: 10px ;
+                    text-decoration: none;
                 }
                 .link div{
                     
@@ -36,7 +37,9 @@
             gap: 20px;
             justify-content: center;
             padding: 20px;
-
+            a{
+                text-decoration: none;
+            }
         }
     }
     .bottom{
@@ -57,7 +60,8 @@
         }
 
         .link{
-            
+            text-decoration: none;
+            color: #fff;
             &:after{
             content: '';
             display: inline-block;
@@ -80,6 +84,15 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                .list{
+                    .link a{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .social a{
+                text-decoration: none;
+
             }
         }
         .bottom{
@@ -87,7 +100,7 @@
             align-items: center;
             text-align: center;
             .link{
-            
+                text-decoration: none;
                 &:after{
                     display: none;
                 }}

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './FilterSwitch.scss'
 
 const FilterSwitch = ({data}) => {

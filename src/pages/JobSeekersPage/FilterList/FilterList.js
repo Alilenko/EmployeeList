@@ -12,7 +12,6 @@ const FilterList = () => {
 
     const toggleClass = () => {
         setOpen(open => !open)
-    
     }
 
     return (
@@ -25,14 +24,14 @@ const FilterList = () => {
             <div className={s.icon_close} onClick={toggleClass}>
                 x
             </div>
-            <FilterPhoto item={filter[5]}/>
-            <FilterSlice item={filter[0]} />
-            <FilterTab item={filter[6]}/>
-            <FilterSlice item={filter[1]} />
-            <FilterCheckbox item={filter[2]} />
-            <FilterCheckbox item={filter[7]}/>
-            <FilterCheckbox item={filter[3]}/>
-            <FilterCheckbox item={filter[4]}/>
+                <FilterPhoto item={filter[5]}/>
+                <FilterSlice item={filter[0]} />
+                <FilterTab item={filter[6]}/>
+                <FilterSlice item={filter[1]} />
+                <FilterCheckbox item={filter[2]} />
+                <FilterCheckbox item={filter[7]}/>
+                <FilterCheckbox item={filter[3]}/>
+                <FilterCheckbox item={filter[4]}/>
             </div>
         </div>
     </>

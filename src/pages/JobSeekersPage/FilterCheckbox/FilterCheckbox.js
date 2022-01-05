@@ -9,7 +9,6 @@ import FilterSwitch from '../FilterSwitch/FilterSwitch';
 const FilterCheckbox = ({item}) => {
 
     const {title, items} = item;
-    console.log();
     return (
         <div>
             <Filter title={title}>
