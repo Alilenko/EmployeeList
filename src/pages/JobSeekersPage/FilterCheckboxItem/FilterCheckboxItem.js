@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const FilterCheckboxItem = (item) => {
     const [chek, setChek] = useState(false)
-    const {title, items } = item;
 
     const changeCheckbox = () => {
         setChek(!chek)

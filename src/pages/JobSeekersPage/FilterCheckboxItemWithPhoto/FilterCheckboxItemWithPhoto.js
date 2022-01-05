@@ -7,7 +7,6 @@ import FilterCheckboxInside from '../FilterCheckboxInside/FilterCheckboxInside'
 const FilterCheckboxItem = (item) => {
     const [chek, setChek] = useState(false)
     const [open, setOpen] = useState(false)
-    const {title, items } = item;
 
     const changeCheckbox = () => {
         setChek(!chek)

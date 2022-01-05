@@ -141,9 +141,7 @@ const initialState = {
                 photo: spain},
             ],
         },
-    ],
-
-   
+    ], 
 }
 
 const filterSlice = createSlice({
@@ -153,10 +151,7 @@ const filterSlice = createSlice({
         changeActiveTab: (state, actions) =>{
            const item =  state.filter.filter(item => item.tab.length > 0)
            const itemChange = item.filter(el => el.name == actions.payload)
-           console.log(itemChange);
- 
         }
-        
     }
 })
 

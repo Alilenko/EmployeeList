@@ -6,7 +6,6 @@ import s from './FilterTab.module.scss';
 const FilterTab = ({item}) => {
     const {title, tab} = item;
 
-
     return (
         <div>
             <Filter  title={title}>
