@@ -20,6 +20,7 @@ const SummaryList = () => {
     .then(data => res(data))
     .catch(() => dispatch(summaryError()))
     const pageNumber = []
+        if(totalPage > 10){
             if(activePage > 5) {
                 for (let i = activePage-4; i <= activePage+5; i++) {
                     pageNumber.push(i)
@@ -32,7 +33,11 @@ const SummaryList = () => {
                     if(i === totalCount) break
                 }
             }
-         
+        } else {
+                for (let i = 1; i <= totalPage; i++) {
+                    pageNumber.push(i)
+            }
+        }
         dispatch(changeTotalPage(pageNumber))
 
    }, [activePage])
